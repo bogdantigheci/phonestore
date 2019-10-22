@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import logo from "../logo.svg";
-import { ButtonContainer } from "./Button";
-import styled from "styled-components";
-
+import { ButtonContainer } from "./Styles";
+import { NavWrapper } from "../components/Styles";
 class Navbar extends Component {
   render() {
     return (
@@ -34,13 +33,5 @@ https://www.iconfinder.com/Makoto_msk */}
     );
   }
 }
-const NavWrapper = styled.nav`
-  background: var(--mainBlue);
-  .nav-link {
-    color: var(--mainWhite) !important;
-    font-size: 1.3rem;
-    text-transform: capitalize;
-  }
-`;
 
 export default Navbar;

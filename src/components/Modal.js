@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import styled from "styled-components";
+import { ModalContainer } from "../components/Styles";
 import { ProductConsumer } from "../context";
-import { ButtonContainer } from "./Button";
+import { ButtonContainer } from "./Styles";
 import { Link } from "react-router-dom";
 
 class Modal extends Component {
@@ -49,20 +49,5 @@ class Modal extends Component {
     );
   }
 }
-
-const ModalContainer = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
-  diplay: flex;
-  justify-content: center;
-  align-items: center;
-  #modal {
-    background: var(--mainWhite);
-  }
-`;
 
 export default Modal;
